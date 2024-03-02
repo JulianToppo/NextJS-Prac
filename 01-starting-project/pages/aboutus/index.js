@@ -1,9 +1,18 @@
-import React from 'react'
-
-const newspage = () => {
+import React from "react";
+import { details } from "../../utils/constants";
+import Link from "next/link";
+const developer = () => {
   return (
-    <div>newspage</div>
-  )
-}
+    <React.Fragment>
+      {details.map((item) => {
+        return (
+          <li>
+            <Link href={"/aboutus/" + item.id}>{item.name}</Link>
+          </li>
+        );
+      })}
+    </React.Fragment>
+  );
+};
 
-export default newspage
+export default developer;
