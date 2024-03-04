@@ -1,7 +1,9 @@
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
-import {Link} from 'next/link'
+import Link from 'next/link'
+
 function MeetupItem(props) {
+
   return (
     <li className={classes.item}>
       <Card>
